@@ -28,6 +28,26 @@ float media(int vet[], int tam){
     return float(maior/tam);
 }
 
+int maior(int vet[], int tam){
+    int i, maior;
+
+    maior = vet[0];
+    for(i=1;i<tam;i++)
+        if(vet[i] > maior)
+            maior = vet[i];
+    return maior;
+}
+
+int menor(int vet[], int tam){
+    int i, menor;
+
+    menor = vet[0];
+    for(i=1;i<tam;i++)
+        if(vet[i] < menor)
+            menor = vet[i];
+    return menor;
+}
+
 int main(){
     int tam, i, *vet;
     float mediaa;
@@ -45,6 +65,8 @@ int main(){
     mediaa = media(vet, tam);
     
     cout<<"Media dos valores: "<<mediaa;
+    cout<<"Maior valor: "<<maior(vet, tam)<<endl;
+    cout<<"Menor valor: "<<menor(vet, tam)<<endl;
     delete []vet;
     return 0;
 }
