@@ -32,7 +32,7 @@ PROBLEMAS ENCONTRADOS NAS FUNÇÕES MAIOR E MENOR:
 
 Quando se tenta trabalhar com laços de repetição e aritimética de ponteiros deve-se tomar cuidado pois
 se usarmos *p++ como uma condicional em um certo lugar da função, duas vezes, era capaz de ele alterar
-o valor do ponteiro para o próximo valor. Já utilizando *(P+i) conseguimos ter uma condicional mais precisa
+o valor do ponteiro para o próximo valor. Já utilizando *(p+i) conseguimos ter uma condicional mais precisa
 apenas do termo atual que esta armazenado no ponteiro, já que utilizamos a variável i como suporte de indice.
 */
 int maior(int vet[], int tam){
