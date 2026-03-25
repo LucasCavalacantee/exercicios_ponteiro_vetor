@@ -19,13 +19,13 @@ int *leitura(int tam){
 }
 
 float media(int vet[], int tam){
-    int i, maior;
+    int i, media;
     
-    maior = 0;
+    media = 0;
     for(i=0;i<tam;i++)
-        maior += vet[i];
+        media += vet[i];
     
-    return float(maior/tam);
+    return float(media/tam);
 }
 
 int maior(int vet[], int tam){
@@ -64,7 +64,7 @@ int main(){
     
     mediaa = media(vet, tam);
     
-    cout<<"Media dos valores: "<<mediaa;
+    cout<<"Media dos valores: "<<mediaa<<endl;
     cout<<"Maior valor: "<<maior(vet, tam)<<endl;
     cout<<"Menor valor: "<<menor(vet, tam)<<endl;
     delete []vet;
