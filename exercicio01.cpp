@@ -38,6 +38,7 @@ int maior(int vet[], int tam){
     return maior;
 }
 
+
 int menor(int vet[], int tam){
     int i, menor;
 
