@@ -35,6 +35,7 @@ se usarmos *p++ como uma condicional em um certo lugar da função, duas vezes, 
 o valor do ponteiro para o próximo valor. Já utilizando *(p+i) conseguimos ter uma condicional mais precisa
 apenas do termo atual que esta armazenado no ponteiro, já que utilizamos a variável i como suporte de indice.
 */
+
 int maior(int vet[], int tam){
     int maior = 0, i, *p = vet;
 
